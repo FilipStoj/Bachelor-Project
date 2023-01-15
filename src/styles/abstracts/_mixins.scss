@@ -1,0 +1,108 @@
+//------------------- LAYOUT CONTAINER -------------------
+@mixin layout {
+  @include xs {
+    margin: 0 1rem 0 1rem;
+  }
+  @include sm {
+    margin: 0 1rem 0 1rem;
+  }
+  @include md {
+    margin: 0 4rem 0 4rem;
+  }
+  @include lg {
+    margin: $page-margin;
+  }
+}
+
+//------------------- BUTTONS -------------------
+@mixin primaryButton {
+  background-color: $brand-colour;
+  border: none;
+  color: $header-colour;
+  padding: 0.5rem 1.875rem;
+  text-align: center;
+  font-size: $link-size;
+  text-transform: uppercase;
+  font-family: $link-font;
+  transition: background-color .2s ease-in-out;
+
+  &:hover {
+    background-color: $accent-colour;
+    color: $font-colour;
+  }
+}
+
+@mixin link{
+  text-decoration: none;
+  font-size: 1rem;
+  font-family: $link-font;
+  color: $font-colour;
+  &:hover{
+    color: $brand-colour;
+    transition-duration: 300ms ;
+  }
+}
+
+@mixin credentialsWrapper {
+  .card {
+    border: none;
+    background: #e5e5e5;
+    border-right: 10px solid $brand-colour !important;
+    height: auto;
+  }
+
+  .forms-inputs {
+    position: relative;
+
+    input {
+      position: relative;
+      display: flex;
+      height: 50px;
+      border: 2px solid #eee;
+      width: 100%;
+    }
+
+    .icon-wrapper {
+      display: flex;
+      align-items: center;
+
+      .icon {
+        width: 12px;
+      }
+    }
+
+    input:focus {
+      box-shadow: none;
+      outline: none;
+      border: 2px solid #000;
+    }
+
+  }
+
+  .form-data {
+
+    button {
+      @include primaryButton;
+      height: 3rem;
+
+    }
+  }
+
+  label {
+    font-family: $bread-font;
+    font-size: $bread-size;
+  }
+
+  .login-link {
+    text-align: center;
+
+    a {
+      text-decoration: none;
+      color: $font-colour;
+
+      &:hover {
+        color: $brand-colour;
+      }
+    }
+  }
+}

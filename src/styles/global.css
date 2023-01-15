@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600;700&family=Roboto+Condensed:wght@300;400;700&family=Roboto:wght@300;400;500&display=swap");
+@import "bootstrap/dist/css/bootstrap.min.css";
+body {
+  margin: 0 !important;
+  padding: 0 !important;
+  height: 100vh;
+  background-color: #FFFAFA;
+}
+
+body {
+  background-color: #FFFAFA;
+}
+
+.error {
+  text-align: center;
+  font-size: 12px;
+  color: red;
+}
+
+/* ---------- HEADINGS ---------- */
+h1 {
+  font-family: "Oswald", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #212121;
+  display: inline;
+  background-image: linear-gradient(#FFFAFA 55%, #FFC0CB 45%);
+  margin: 0;
+}
+
+h2 {
+  font-family: "Oswald", sans-serif;
+  color: #212121;
+  font-weight: lighter;
+  text-transform: uppercase;
+  margin-bottom: 2px;
+}
+
+h3 {
+  font-family: "Oswald", sans-serif;
+  color: #212121;
+  font-weight: lighter;
+  text-transform: uppercase;
+  margin-bottom: 2px;
+  font-size: 1.3rem;
+}
+
+/* ---------- PARAGRAPHS ---------- */
+p {
+  margin-top: 8px;
+  font-family: "Roboto Condensed", sans-serif;
+  line-height: 1.688rem;
+  word-break: break-word;
+  hyphens: auto;
+}
+
+/* ---------- CONTAINERS ---------- */
+.base-container {
+  margin: 0 10.375rem 0 10.375rem;
+  min-height: 100vh;
+  background-color: #FFFAFA;
+}
+
+/*# sourceMappingURL=global.css.map */

@@ -1,0 +1,57 @@
+@import './base/_global.scss';
+@import './abstracts/_global.scss';
+@import "bootstrap/dist/css/bootstrap.min.css";
+
+body {
+  background-color: #FFFAFA;
+}
+
+.error{
+  text-align: center;
+  font-size: 12px;
+  color: red;
+}
+
+/* ---------- HEADINGS ---------- */
+h1 {
+  font-family: $header-font;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: $font-colour;
+  display: inline;
+  background-image: linear-gradient(#FFFAFA 55%, $accent-colour 45%);
+  margin: 0;
+}
+
+h2 {
+  font-family: $header-font;
+  color: $font-colour;
+  font-weight: lighter;
+  text-transform: uppercase;
+  margin-bottom: 2px;
+}
+
+h3 {
+  font-family: $header-font;
+  color: $font-colour;
+  font-weight: lighter;
+  text-transform: uppercase;
+  margin-bottom: 2px;
+  font-size: 1.3rem;
+}
+
+/* ---------- PARAGRAPHS ---------- */
+p {
+  margin-top: 8px;
+  font-family: $bread-font;
+  line-height: 1.688rem;
+  word-break: break-word;
+  hyphens: auto;
+}
+
+/* ---------- CONTAINERS ---------- */
+.base-container {
+  margin: 0 10.375rem 0 10.375rem;
+  min-height: 100vh;
+  background-color: #FFFAFA;
+}
